@@ -2,14 +2,12 @@
 // 作用：可以自定义每个产品在出厂前，封装一些操作，
 // 这样只需要工厂不停地去生成，就可以生产出加了额外特性的产品了
 
-
 class Product {
     constructor(name, price) {
         this.name = name
         this.price = price
     }
 }
-
 
 class Factory {
     // 在工厂中，每生产一个产品都可以额外添加新的东西
@@ -34,7 +32,7 @@ function getDiscount(obj, discount) {
     })
 }
 
-// 测试
+// test
 // 创建一个工厂
 let factory = new Factory()
 // 工厂制造产品
